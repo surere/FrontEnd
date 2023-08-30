@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://fonts.googleapis.com/css?family=Roboto); */
+
+/* zocial */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+
+h2 { /*로그인 */
+  color:rgba(255,255,255,.8);
+  margin-left:12px;
+}
+
+body {
+  background: #272125;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+form {
+  position:relative;
+  margin: 50px auto;
+  width: 380px;
+  height: auto;
+}
+
+/* input {
+  padding: 1px;
+  border-radius:1px;
+  border:0px;
+  background: #ffffff;
+  display: block;
+  margin: 15px;
+  width: 300px;  
+  color:#000000;
+  font-size:18px;
+  height: 54px;
+} */
+
+/* input:focus {
+  outline-color: rgba(0,0,0,0);
+  background: rgba(255,255,255,.95);
+  color: #e74c3c;
+} */
+
+button {
+  float:right;
+  height: 90px;
+  width: 90px;
+  border: 1px solid rgb(0, 0, 0);
+  background: #d42931;
+  border-radius:5px;
+  padding: 10px;
+  color:white;
+  font-size:15px;
+}
+
+/* .inputUserIcon {
+  position:absolute;
+  top:68px;
+  right: 80px;
+  color:white;
+}
+
+.inputPassIcon {
+  position:absolute;
+  top:136px;
+  right: 80px;
+  color:white;
+} */
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #d42931;
+}
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2><span class="entypo-LOGIN"></span> LOGIN</h2>
+        <button class="submit">로그인</button>
+        <!-- <span class="entypo-user inputUserIcon"> -->
+         
+         </span>
+        <input type="text" class="user" placeholder="아이디"/>
+        <span class="entypo-key inputPassIcon">
+           
+         </span>
+        <input type="password" class="pass"placeholder="...."/>
+      </form>
+</body>
+</html>

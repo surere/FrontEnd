@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<명함>
+    <성명 성= "Tom" 이름="Cruse" >톰프루즈</성명>
+    <직위>영화배우</직위>
+    <TLE>02-7979-4444</TLE>
+    <Mobile>010-1234-5678</Mobile>
+    <e-mail>misssion@movie.com</e-mail>
+    <주소>서울 금천구 가산동 월드메리앙</주소>
+    <homepage>http://imf-team.com</homepage>
+    <copyright>KOSMO</copyright>
+</명함>

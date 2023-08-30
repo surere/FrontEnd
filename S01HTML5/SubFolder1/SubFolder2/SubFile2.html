@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang ="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>서브파일2</title>
+    </head>
+    <body>
+        <h2>서브파일2</h2>
+
+        <h3>상대경로로 링크 걸기</h3>
+        <!-- 상위경로로 이동해야 하므로 단계에 따라 아래와 같이
+        기술하면 된다. 경로가 두번들어가야한다../../ 한번들어가야한다../ 이런식으로
+        -->
+        <ul>
+            <li><a href="../../H06A.html">H06A.html 바로가기</a></li>
+            <li><a href="../SubFile1.html">
+                서브파일1 바로가기</a></li>
+        </ul>
+
+            <h3>절대경로로 링크 걸기</h3>
+            <!-- 절대경로는 전혀 변함 없음-->
+        <ul>
+            <li><a href="/DevData/FrontEnd/S01HTML5/H06A.html">H06A.html 바로가기</a></li>
+            <li><a href="/DevData/FrontEnd/S01HTML5/SubFolder1/SubFile1.html">
+                서브파일1 바로가기</a></li>
+        </ul>
+    </body>
+</html>

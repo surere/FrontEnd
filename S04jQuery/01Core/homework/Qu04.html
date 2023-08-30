@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../common/jquery/jquery-3.7.0.js"></script>
+    <title>Qu04.html</title>
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+                var row = $('#row').val();
+                var col = $('#col').val();
+
+                var table = "<table border='1'>";
+                for(var i =1; i<=row; i++){
+                    table +="<tr>";
+                    
+                    for(var j=1; j<=col; j++){
+                        table += "<td>"+i+"행,"+j +"열</td>";
+                    }
+                    table +="</tr>";
+                }
+                table+="</table>"
+
+
+                $(table).prependTo('#appendDisplay');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>document.write()로 표만들기</h2>
+	
+	<input type="number" id="row" value="2" />
+	<input type="number" id="col" value="2" />
+	<input type="button" id="btn" value="동적테이블추가" />
+	<div id="appendDisplay">
+		
+	</div>	
+</body>
+</html>

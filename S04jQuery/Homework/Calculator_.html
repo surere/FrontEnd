@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+         *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator { /*계산기 전체*/
+  border: 1px solid rgb(164,164,151); 
+  width: 400px;
+  height: 350px;
+ 
+  padding: 1%;
+  
+
+  background-color: rgb(221, 221, 221);
+ 
+  border-radius: 10px;
+ 
+}
+
+.display { /*계산기 창*/
+  width: 95%;
+  display: flex;
+  height: 20%; /*계산칸*/
+ 
+  justify-content: right;
+  align-items: center;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: rgb(55, 55, 55);
+  background-color: rgb(112,199,56);
+  font-size: 40px;
+ 
+  border-radius: 10px;
+  font-weight: bold;
+  
+}
+
+.display span { 
+  margin-right: 10px;
+  
+}
+
+.button_container {
+  display: flex; /*버튼의 사이즈*/
+  flex-direction: column;
+  height: 70%; /*안쪽 전체 높이*/
+  width: 90%;
+
+}
+
+.button_content{/*backspace와 c의 버튼 */
+
+  flex: 1 0 20%;
+  display: flex;
+
+}
+
+.button_number { /*숫자버튼*/
+  flex: 1 0 25%;
+  background-color: rgb(55, 55, 55);
+  color: white;
+
+  font-size: large;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 3px;
+}
+
+
+.button_operator { /*연산버튼의 색상*/
+  flex: 1 0 25%;
+  background-color: rgb(250, 150, 10);
+  color: white;
+  
+  font-size: large;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 3px;
+}
+
+
+.button_reset {/*backspace와 c의 버튼 색상*/
+  
+  flex: 1 0 52%;
+ 
+  background-color: rgb(123, 123, 123);
+  color: white;
+ 
+  font-size: large;
+  border-radius: 10px; 
+  font-weight: bold;
+  margin: 3px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="calculator">
+          <div class="display">
+            <span>123+654</span> 
+          </div>
+    
+          <div class="button_container">
+            
+            <div class="button_content">
+              <button class="button_reset">BackSpace</button>
+              <button class="button_reset">C</button>
+            </div>
+    
+            <div class="button_content">
+              <button class="button_number">1</button>
+              <button class="button_number">2</button>
+              <button class="button_number">3</button>
+              <button class="button_operator">/</button>
+            </div>
+    
+            <div class="button_content">
+              <button class="button_number">4</button>
+              <button class="button_number">5</button>
+              <button class="button_number">6</button>
+              <button class="button_operator">x</button>
+            </div>
+    
+            <div class="button_content">
+              <button class="button_number">7</button>
+              <button class="button_number">8</button>
+              <button class="button_number">9</button>
+              <button class="button_operator">+</button>
+            </div>
+    
+            <div class="button_content">
+              <button class="button_number">=</button>
+              <button class="button_number">0</button>
+              <button class="button_operator">.</button>
+              <button class="button_operator">-</button>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+</body>
+</html>

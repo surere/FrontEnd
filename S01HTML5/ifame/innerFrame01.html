@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerFrame01.html</title>
+</head>
+<body>
+    <h2>innerFrame01 페이지</h2>
+
+    <h4>창의이름 : innerFrame02</h4>
+    <!-- 
+        상위 부모페이지가 1개밖에 없을 때는 _top, _parent는 동일한
+        페이지를 가리키게 된다.
+    -->
+
+    <iframe src="innerFrame02.html" name="innerWin01"
+    width="300" height="200" frameborder="1" scrolling="auto"></iframe>
+
+    <p>
+        <!-- 현재 프레임에서 이동한다. 내 자신의 프레임에서 이동을 한다는 의미-->
+        <a href="http://daum.net" target="_self">
+            _self에서 이동
+    </a>
+    <br/>
+    <!-- 아래 2개의 링크는 모두 부모페이지인 H10Iframe.html에서
+    이동하게 된다.-->
+        <a href="http://daum.net" target="_parent">
+            _parent에서 이동
+        </a>
+        <br/>
+        <a href="http://daum.net" target="_top">
+            _top에서 이동
+        </a>
+        
+    </p>
+</body>
+</html>

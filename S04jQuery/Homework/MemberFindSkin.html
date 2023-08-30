@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0 auto;}
+        a {color:#333; text-decoration: none;}
+        .find {text-align:center; width:500px; margin-top:30px; }
+        </style>
+</head>
+<body>
+    <div class="find">
+        <form method="post" action="member_find_id.php">
+          <!-- <h1>회원계정 찾기</h1> -->
+          <!-- <p><a href="/">홈으로</a></p> -->
+          
+            <input type="radio" name="ra" size="6"> 아이디 찾기
+            <input type="radio" name="ra" size="6"> 비밀번호 찾기 <br/> 
+            
+           
+            <fieldset>
+                <table>
+                  <tr>
+                    <td>이름(대표자명)</td>
+                    <td><input type="text" size="30" name="name" placeholder=""></td>
+                  </tr>
+                  <tr>
+                    <td><style></style>></td>
+                    <td><select name="emadress">
+                        <option value="ele">휴대전화</option>
+                            <option value="ele">010</option>
+                            <option value="mid">011</option> 
+                            <option value="high">070</option>
+                            <option value="uni">080</option>
+                        </select>
+                        <input type="text"  size="1"name="jumin1"/> - <input type="text"  size="2"name="jumin2"/> - <input type="text"  size="2" name="jumin2"/></select></td>
+                  </tr>
+                </table>
+              <!-- <input type="submit" value="아이디 찾기" /> -->
+          </fieldset>
+        </form>
+      </div>
+      <div class="find">
+          <form method="post" action="member_find_pw.php">
+            <input type="radio" name="ra" size="6"> 아이디 찾기
+            <input type="radio" name="ra" size="6"> 비밀번호 찾기 <br/> 
+            <fieldset>
+              <!-- <legend>비밀번호 찾기</legend> -->
+                <table>
+                  <tr>
+                    <td>아이디</td>
+                    <td><input type="text" size="35" name="userid" placeholder=""></td>
+                  </tr>
+                  <tr>
+                    <td>이름(대표자명)</td>
+                    <td><input type="text" size="35" name="name" placeholder=""></td>
+                  </tr>
+                  <tr>
+                    <!-- <td>이메일</td> -->
+                    <tr>
+                       
+                        <td><select name="emadress" ><option value="ele" >이메일</option></select>
+                    <td><input type="text" size="10" name="email"> @ <input type="text" size="10" name="email"> <select name="emadress"> <option value="직접입력">직접입력</option> <option value="naver.com">naver.com</option><option value="nate.com">nate.com</option>
+                    <option value="hanmail.com">hanmail.com</option><option value="gmail.com">gmail.com</option></select></td>
+                  </tr>
+                </table>
+              <!-- <input type="submit" value="비밀번호 찾기" /> -->
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>
